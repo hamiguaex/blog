@@ -14,7 +14,7 @@
 <meta property="og:description" content="__builtin_expect __builtin_expect这个指令是gcc引入的，作用是允许程序员将最有可能执行的分支告诉编译器  指令写法：__builtin_expect(EXP, N)：意思是：EXP &#x3D;&#x3D; N 的概率很大  通常将__builtin_expect指令封装为likely和unlikely  #define LIKELY(x)            __builtin_">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-21T06:08:09.264Z">
-<meta property="article:modified_time" content="2020-09-21T14:50:40.881Z">
+<meta property="article:modified_time" content="2020-09-21T14:54:27.508Z">
 <meta property="article:author" content="HanMingtao">
 <meta name="twitter:card" content="summary">
   
@@ -102,12 +102,12 @@
 <li><p><code>#define LIKELY(x)            __builtin_expect(!!(x),1)</code>：表示x不为0的可能性更大</p>
 </li>
 <li><p><code>#define UNLIKELY(x)        __builtin_expect(!!(x),0)</code>：表示x为0的可能性更大</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x, y;</span><br><span class="line"><span class="keyword">if</span>(unlikely(x &gt; <span class="number">0</span>)) &#123;</span><br><span class="line">    y = <span class="number">1</span>; </span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    y = <span class="number">-1</span>;</span><br><span class="line">&#125;    </span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
+<h4 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h4> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x, y;</span><br><span class="line"><span class="keyword">if</span>(unlikely(x &gt; <span class="number">0</span>)) &#123;</span><br><span class="line">    y = <span class="number">1</span>; </span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    y = <span class="number">-1</span>;</span><br><span class="line">&#125;    </span><br></pre></td></tr></table></figure>
+
+
+
 <h2 id="for跟while的死循环"><a href="#for跟while的死循环" class="headerlink" title="for跟while的死循环"></a>for跟while的死循环</h2><ul>
 <li><code>for(; ; )</code>指令少，不占用寄存器，而且没有判断、跳转，比<code>while(1)</code>要好一些 </li>
 </ul>
@@ -117,7 +117,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hamiguaex.github.io/blog/2020/09/21/2020-09-20CPP%E7%AC%94%E8%AE%B0/" data-id="ckfcnd2hi0002eqk8ax58h19j" data-title="2020-09-20CPP笔记" class="article-share-link">Share</a>
+      <a data-url="https://hamiguaex.github.io/blog/2020/09/21/2020-09-20CPP%E7%AC%94%E8%AE%B0/" data-id="ckfcnhucq0001msk883vdgjgc" data-title="2020-09-20CPP笔记" class="article-share-link">Share</a>
       
       
       
