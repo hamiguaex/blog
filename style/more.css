@@ -1,0 +1,29 @@
+#more-box {
+  width: 96%;
+  margin: 0 auto 50px;
+  padding-top: 36px;
+  /* background-color: #666; */
+}
+.more-link {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ddd;
+  overflow: hidden;
+}
+.viewmore {
+  float: right;
+  height: 46px;
+  width: 50%;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 46px;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+@media (min-width: 992px) {
+  #more-box {
+    margin-left: 286px;
+    width: calc(98% - 280px);
+  }
+}

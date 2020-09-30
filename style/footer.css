@@ -8,6 +8,7 @@ footer {
 #footer {
     position: absolute;
     bottom: 0;
+    display: none;
     padding-bottom: 30px;
     width: 100%;
     color: #fff;
@@ -30,5 +31,8 @@ footer a {
 @media (min-width: 992px) {
     footer {
         display: none;
+    }
+    #footer {
+        display: block;
     }
 }
