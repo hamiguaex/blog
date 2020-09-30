@@ -69,12 +69,15 @@
     height: auto;
     font-size: 14px;
     font-weight: bold;
-    line-height: 20px;
+    line-height: 26px;
     color: var(--tipcolor);
 }
 
+.article-categories a {
+    margin-right: 12px;
+}
 .article-categories a:hover {
-    color: var(hovercolor);
+    color: var(--hovercolor);
 }
 
 .article-title {
