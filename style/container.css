@@ -1,0 +1,108 @@
+#listtitle-box,
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 36px;
+    /* background-color: #666; */
+}
+
+#container {
+    height: auto;
+}
+
+#listtitle-box .listtitle {
+    width: 90%;
+    height: auto;
+    margin-bottom: 36px;
+    padding: 36px;
+    background-color: var(--background);
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: var(--foreground);
+}
+
+#listtitle-box .listtitle h1 {
+    margin-bottom: 10px;
+}
+
+#listtitle-box .listtitle h1 span {
+    position: relative;
+}
+
+#listtitle-box .listtitle h1 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--blue);
+}
+
+.articleinfo {
+    padding-top: 18px;
+    border-top: 3px solid var(--border);
+}
+
+.article-item {
+    width: 90%;
+    height: auto;
+    margin-bottom: 36px;
+    padding: 36px;
+    border: 1px solid var(--border);
+    background-color: var(--foreground);
+}
+
+.article-item:hover,
+#listtitle-box .listtitle:hover {
+    box-shadow: 10px 10px 10px var(--shadowcolor);
+}
+
+.article-item p {
+    text-indent: 2em;
+}
+
+.article-categories {
+    height: auto;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: var(--tipcolor);
+}
+
+.article-categories a:hover {
+    color: var(hovercolor);
+}
+
+.article-title {
+    height: auto;
+    margin: 0 0 24px;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.article-excerpt {
+    min-height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.article-date {
+    height: auto;
+    margin-top: 24px;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+@media (min-width: 992px) {
+    #listtitle-box,
+    #container {
+        margin-left: 286px;
+        width: calc(98% - 280px);
+    }
+}

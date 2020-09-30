@@ -1,0 +1,123 @@
+header {
+    width: 96%;
+    /* height: 300px; */
+    margin: 20px auto 0;
+    background-color: var(--blue);
+    background-image: url(../image/bg.png);
+    background-size: 10px;
+}
+
+#logo {
+    width: 100%;
+    height: 180px;
+    max-width: 280px;
+    padding-top: 20px;
+    margin: 0 auto;
+    background-image: url(../image/timg2.jpg);
+    background-size: cover;
+}
+
+#logo .logo-title {
+    font-size: 50px;
+    line-height: 56px;
+    text-align: center;
+    color: var(--foreground);
+}
+
+#logo .logo-tips {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--foreground);
+}
+
+#menu-button {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 30px;
+    border-top: 3px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-indent: 1.5em;
+    font-weight: bold;
+    color: var(--foreground);
+}
+
+#menu-button i {
+    display: block;
+    float: right;
+    margin-right: 1.5em;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#menu ul li {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid var(--border);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-indent: 1.5em;
+    font-weight: bold;
+    color: var(--foreground)
+}
+
+#menu ul li:hover {
+    color: var(--blue);
+}
+
+@keyframes menu-open {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 244px;
+    }
+}
+
+@keyframes menu-close {
+    0% {
+        height: 244px;
+    }
+    100% {
+        height: 0;
+    }
+}
+
+.menu-open {
+    animation: menu-open 0.4s forwards ease-in-out;
+}
+
+.menu-close {
+    animation: menu-close 0.4s forwards ease-in-out;
+}
+
+@media (min-width: 992px) {
+    header {
+        position: fixed;
+        left: 0;
+        margin-top: 0;
+        width: 280px;
+        height: 100%;
+        border-right: 1px solid var(--border);
+        box-shadow: 10px 0 26px var(--shadowcolor);
+    }
+    #menu-button {
+        display: none;
+    }
+    #menu ul {
+        height: 244px;
+    }
+    .menu-open,
+    .menu-close {
+        animation-name: none!important;
+    }
+}

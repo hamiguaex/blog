@@ -1,0 +1,46 @@
+:root {
+    --foreground: #fff;
+    --background: rgba(0, 0, 0, 0.9);
+    --border: #ddd;
+    --blue: #0af;
+    --tipcolor: #888;
+    --hovercolor: #666;
+    --shadowcolor: #888;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+}
+
+#goto-top {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7)
+}

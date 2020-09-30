@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.eot?t=1601305106119');
+    /* IE9 */
+    src: url('iconfont.eot?t=1601305106119#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMQAAsAAAAABzwAAALEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqCHIF7ATYCJAMMCwgABCAFhG0HPhtJBhHVk1FkXx5Ph4WOnRSN+M5lfjDMgTdRKoWLBCdNFobV+b0OAlwrJ8nePgAoZLYEIJ9tkYRphUJ3rtXvjqC67f3dNF9AgSYWJJzXZBAFIgk8OOSgXSjWGALCrABIwAXrFMCo35yr6tGYqJcj+YQe7TDdOL0sI5/ncnqjxOcHiiyMbK5FR70A4wMKcC+MIiuQBL1leK1L8ZAfQwBLvsKIo6Csjk5DVgkgnuHBbnrBQetoF8wJesPBQrzAvG3L78Bh9H3xExPmIBkSsrFqIL+P3YjxSUwiCZTL+QD9GCgQBjSIszHQRCaFMIqlqyuvH3QaQS6V/kUKT6fTPzyQBMQEabUGEISLEka4IjMOVE89pADoPqOpDvRBLM5To2rNGq5oHbzcdek/X3JOO9txbbjYca6L2GRcLDc3zZ+1ffy6/M3KbvfL0uemTFKg3UP132frK/cr0TvtPn3c8th6+d6zvXyb1H8cdp21WNi0SLOZ8hi3DLmruDa5dB2bGOu15CW9nslzOW9C7DU05CbcPE9LoIAgXZClavMfTCOX5dNv/w1e37yvb5e2eRoAP2vHKGYaxbBmzEkMVv5k5cARzVMTpypHwRVBSIm6YZ8EyIwwJiTi6M90i8uLlARzLhkkMz5QzPmRGjcMBlbioDOXCUuhCo9bcTJCEmUBhFhHEOw9g2TrGxR7P0iN+xsGrv5BZx8KlhqE04VW5E1cqxtjKJhANEEeU6OZW1Zx+xvTrgo5r454f+Q2T4NrOeXyCxvkJba0feqJaNBMNTzRc1hVBIapwFisTMRsbVs3vcmKqVYrN8ZQMAHRBPKYGi0ny6ry+TemXRVyB6Mr/kdu8+mBy+IMIF+GZhDjUV5p+9QjooFmqsET+bCiBQKmeV6BsViyCTmzZeNxeqjB2t5U/18WLMjWjBYZZX13tfGF2Awzi8M8CRulAA==') format('woff2'), url('iconfont.woff?t=1601305106119') format('woff'), url('iconfont.ttf?t=1601305106119') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1601305106119#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.icon-menu {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 56px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu::before {
+    content: "\e605";
+}
+
+.icon-gototop {
+    font-family: "iconfont" !important;
+    font-size: 30px;
+    line-height: 40px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+}
+
+.icon-gototop::before {
+    content: "\e6f8";
+    display: block;
+    width: 40px;
+    text-align: center;
+}
