@@ -1,0 +1,33 @@
+code,
+pre {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 28px;
+}
+code {
+  font-style: italic;
+}
+.gutter {
+  padding-right: 8px;
+  border-right: 1px solid #999;
+  text-align: right;
+  color: #495162;
+}
+.code {
+  padding-left: 8px;
+  color: #56b6c2;
+}
+.highlight {
+  margin: 0 auto;
+  overflow: auto;
+  background-color: #282c34;
+}
+
+.meta {color: #c678dd;}
+.meta-string {color: #e5c07b;}
+.number {color: #e06c75;}
+.keyword {color: #c678dd;}
+.function {color: #61afef;}
+.params {color: #d19a66;}
+.comment {color: #7f848e;}
+.title {color: #61afef;}
