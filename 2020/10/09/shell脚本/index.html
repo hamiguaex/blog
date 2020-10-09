@@ -135,11 +135,11 @@
 
 <div id="listtitle-box">
 <div class="listtitle">
-    <h1><span>tags</span></h1>
+    <h1><span>shell脚本</span></h1>
     <div class="articleinfo">
         <div class="date">
              
-                2020-9-30
+                2020-10-9
              
         </div>
     </div>
@@ -147,7 +147,30 @@
 </div>
         <div id="container" class="container-width">
             <div class="article-item">
-    
+    <p>在最简单的情况下，脚本程序不过是存储在一个文件里的系统命令列表。这至少让你执行它 时不必重新按顺序键入相同功能的命令序列。</p>
+<h4 id="Eg"><a href="#Eg" class="headerlink" title="Eg"></a>Eg</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">mkdir <span class="built_in">test</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>sha-bang(#!)</strong><ul>
+<li>脚本开头的<em>sha-bang</em>(#!)是告诉系统这个文件是由特定命令解释器解释的一组命令。</li>
+<li>sha-bang(#!)必须位于脚本的第一行, 并且顶格写, 否则都是错的</li>
+<li>如果脚本包含了额外的#!行, bash会把它当作一个注释(只有第一行的会生效)</li>
+<li>#! 实际上是两个字节的<em>魔数</em>, 魔数是指定文件类型的特殊记号，在此是表示这是一个可执行的shell脚本（键入<code>man magic</code>可了解更多的信息）。</li>
+<li>紧跟着*#!<em>的是一个</em>路径名*.这个路径名是解释这个脚本内命令的命令解释器程序的路径：可能是一个shell，也可能是一个编程语言或者是一个软件包程序。</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h4 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a><strong>运行脚本</strong></h4><ul>
+<li>脚本可以使用<code>sh scriptname</code>或<code>bash scriptname</code>来执行<ul>
+<li><em>不推荐使用<code>sh &lt;scriptname</code>因为这样会禁止脚本从标准输入里读取数据</em></li>
+<li>使用<code>sh scriptname</code>来调用脚本会关闭一些Bash特定的扩展, 脚本可能因此而调用失败</li>
+</ul>
+</li>
+<li>使用chmod命令可以使脚本自身变成可执行的，之后可以使用<code>./scriptname</code>来执行脚本</li>
+<li>把脚本移到目录<code>/usr/local/bin</code>中, 只需要在命令行输入<code>scriptname[回车]</code>就可以执行脚本</li>
+</ul>
+
 </div>
         </div>
     
