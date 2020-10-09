@@ -24,12 +24,13 @@
     color: var(--foreground);
 }
 
-#listtitle-box .listtitle h1 {
-    margin-bottom: 10px;
-}
+/* #listtitle-box .listtitle h1 {
+} */
 
 #listtitle-box .listtitle h1 span {
     position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 #listtitle-box .listtitle h1 span::after {
